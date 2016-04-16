@@ -22,9 +22,9 @@ System.register(['angular2/core', './authors.service'], function(exports_1, cont
             }],
         execute: function() {
             AuthorsComponent = (function () {
-                function AuthorsComponent(AuthorService) {
+                function AuthorsComponent(authorService) {
                     this.title = "Title for the authors page";
-                    this.authors = AuthorService.getAuthors();
+                    this.authors = authorService.getAuthors();
                 }
                 AuthorsComponent = __decorate([
                     core_1.Component({
